@@ -39,53 +39,90 @@ table {
   font-family: 'BIG JOHN';
   src: url("../fonts/BIG JOHN.otf") url("../fonts/Slim Joe.otf") url("../fonts/befonts.com.url") url("../fonts/Apache LLicense.txt"); }
 
-.navbar {
-  background-color: #000000; }
-
-.logo {
-  width: 8%;
-  height: 10%;
-  padding-left: 1%;
-  padding-top: 1%; }
-
-.text {
-  margin-left: 25%;
-  font-size: 100%;
-  height: 160px;
-  vertical-align: middle;
-  color: white; }
-
-.headerbckgr {
-  opacity: 50%;
-  z-index: 1;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e39147+0,e39147+100&1+0,0+100 */
-  background: -moz-linear-gradient(top, #e39147 0%, rgba(227, 145, 71, 0) 100%);
+.main-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e39147+1,e39147+99&1+0,0.8+0 */
+  background: -moz-linear-gradient(top, rgba(227, 145, 71, 0.8) 0%, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 99%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e39147 0%, rgba(227, 145, 71, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(227, 145, 71, 0.8) 0%, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 99%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #e39147 0%, rgba(227, 145, 71, 0) 100%);
+  background: linear-gradient(to bottom, rgba(227, 145, 71, 0.8) 0%, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 99%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', endColorstr='#00e39147',GradientType=0 );
-  /* IE6-9 */ }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', endColorstr='#cce39147',GradientType=0 );
+  /* IE6-9 */
+  position: fixed;
+  z-index: 10; }
+  .main-header .container .text-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3% 0;
+    color: white;
+    text-transform: uppercase; }
+    .main-header .container .text-header h1 {
+      font-size: 200%; }
+    .main-header .container .text-header .meniu {
+      list-style: none; }
+      .main-header .container .text-header .meniu li {
+        padding-left: 15px;
+        display: inline-block;
+        color: white;
+        font-size: 120%; }
 
-.main-banner {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e39147+1,c6584d+99&1+0,0.8+100 */
-  background: -moz-linear-gradient(top, #e39147 0%, #e39147 1%, rgba(198, 88, 77, 0.8) 99%, rgba(198, 88, 77, 0.8) 100%);
+.main-banner .banner-img {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .main-banner .banner-img img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+
+.main-banner .banner-section {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e39147+39,991d1d+63&0.8+1,0.8+100 */
+  background: -moz-linear-gradient(left, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 39%, rgba(153, 29, 29, 0.8) 63%, rgba(153, 29, 29, 0.8) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e39147 0%, #e39147 1%, rgba(198, 88, 77, 0.8) 99%, rgba(198, 88, 77, 0.8) 100%);
+  background: -webkit-linear-gradient(left, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 39%, rgba(153, 29, 29, 0.8) 63%, rgba(153, 29, 29, 0.8) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #e39147 0%, #e39147 1%, rgba(198, 88, 77, 0.8) 99%, rgba(198, 88, 77, 0.8) 100%);
+  background: linear-gradient(to right, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 39%, rgba(153, 29, 29, 0.8) 63%, rgba(153, 29, 29, 0.8) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', endColorstr='#ccc6584d',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', endColorstr='#cc991d1d',GradientType=1 );
   /* IE6-9 */ }
-  .main-banner img {
-    width: 100%; }
+  .main-banner .banner-section .container .header {
+    padding-top: 110px; }
+    .main-banner .banner-section .container .header h1 {
+      text-transform: uppercase;
+      font-size: 280%;
+      padding-top: 7%;
+      color: white;
+      font-weight: bold; }
+  .main-banner .banner-section .container .hr-banner {
+    width: 100px;
+    background-color: white;
+    height: 3px;
+    align-self: center;
+    margin-left: 45%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 24px; }
+  .main-banner .banner-section .container p {
+    align-self: center;
+    padding: 4% 20%;
+    color: white;
+    font-size: 120%; }
 
 .intro {
   padding: 30px 0px; }
   .intro .container .header h1 {
     text-transform: uppercase;
-    font-size: 250%;
+    font-size: 200%;
     padding-top: 8%;
     color: #222222;
     font-weight: bold; }
@@ -93,26 +130,40 @@ table {
     align-self: center;
     padding: 8% 20%;
     color: #A7A7A7;
-    font-size: 180%; }
+    font-size: 135%; }
 
 .pure {
   position: relative; }
-  .pure img {
+  .pure .cont {
+    position: relative;
     width: 100%;
-    height: 510px; }
-  .pure .pure-text .btn {
+    height: 500px;
+    overflow: hidden; }
+    .pure .cont img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .pure .pure-text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 20px 90px;
-    transform: translate(-50%, -50%);
-    border: 2px solid white;
-    color: white;
-    font-size: 32px;
-    transition: 0.3s; }
-  .pure .pure-text .btn:hover {
-    background-color: white;
-    color: black; }
+    top: 0; }
+    .pure .pure-text .btn {
+      position: absolute;
+      top: 220px;
+      left: 43%;
+      padding: 20px 100px;
+      border: 2px solid white;
+      color: white;
+      font-size: 32px;
+      margin-left: -90px; }
+    .pure .pure-text .btn:hover {
+      background-color: white;
+      color: black; }
 
 .work .container .work-header h1 {
   color: #222222;
@@ -134,30 +185,36 @@ table {
   font-weight: bold;
   color: black; }
 
-.work .container .image-container .imghv {
+.work .container .imghv {
   transition: 0.3s;
   position: relative; }
-  .work .container .image-container .imghv:hover .imghover {
+  .work .container .imghv:hover .imghover {
     display: block; }
-  .work .container .image-container .imghv .imgcls {
+  .work .container .imghv .imgcls {
     overflow: hidden;
     position: relative;
     height: 420px; }
-    .work .container .image-container .imghv .imgcls img {
+    .work .container .imghv .imgcls img {
       position: absolute;
       transform: translate(-50%, -50%);
       height: 100%;
       width: auto;
-      padding-bottom: 20px; }
-  .work .container .image-container .imghv .imghover {
+      padding-bottom: 20px;
+      top: 50%;
+      left: 50%; }
+  .work .container .imghv .imghover {
     position: absolute;
     top: 0%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: none; }
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 50%; }
 
-.work .images-button .btn1 {
+.images-button .btn1 {
   background-color: white;
   text-decoration: none;
   font-size: 24px;
@@ -171,7 +228,7 @@ table {
   margin-top: 3%;
   transition: 0.3s; }
 
-.work .images-button .btn1:hover {
+.images-button .btn1:hover {
   background-color: black;
   color: white; }
 
@@ -181,26 +238,42 @@ table {
   height: 3px;
   align-self: center;
   margin-left: 45%;
-  margin-top: 30px;
+  margin-top: 70px;
   margin-bottom: 30px;
   font-size: 24px; }
 
 .help {
   position: relative; }
-  .help img {
+  .help .cont {
+    position: relative;
     width: 100%;
-    height: 500px; }
-  .help .help-text .btn {
+    height: 500px;
+    overflow: hidden; }
+    .help .cont img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .help .help-text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 220px;
-    left: 43%;
-    padding: 20px 100px;
-    border: 2px solid white;
-    color: white;
-    font-size: 32px; }
-  .help .help-text .btn:hover {
-    background-color: white;
-    color: black; }
+    top: 0; }
+    .help .help-text .btn {
+      position: absolute;
+      top: 220px;
+      left: 43%;
+      padding: 20px 100px;
+      border: 2px solid white;
+      color: white;
+      font-size: 32px;
+      margin-left: -90px; }
+    .help .help-text .btn:hover {
+      background-color: white;
+      color: black; }
 
 .clients {
   background-color: #F4F4F4; }
@@ -223,19 +296,43 @@ table {
   padding: 30px 0px; }
   .about-us .container .header h1 {
     text-transform: uppercase;
-    font-size: 250%;
-    padding-top: 8%;
+    font-size: 230%;
+    padding-top: 5.5%;
     color: #222222;
     font-weight: bold; }
   .about-us .container p {
     align-self: center;
-    padding: 8% 20%;
+    padding: 6% 20%;
     color: #A7A7A7;
-    font-size: 180%; }
-  .about-us .container .imgabout img {
-    padding: 10px;
-    width: 270px;
-    height: 350px; }
+    font-size: 145%; }
+  .about-us .container .row .imghv {
+    transition: 0.3s;
+    position: relative; }
+    .about-us .container .row .imghv:hover .imghover {
+      display: block; }
+    .about-us .container .row .imghv .imgcls {
+      overflow: hidden;
+      position: relative;
+      height: 420px; }
+      .about-us .container .row .imghv .imgcls img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+        padding-bottom: 20px;
+        top: 50%;
+        left: 50%; }
+    .about-us .container .row .imghv .imghover {
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      padding-top: 50%; }
 
 .video iframe {
   width: 100%;
@@ -245,15 +342,15 @@ table {
   padding: 30px 0px; }
   .why-us .container .header h1 {
     text-transform: uppercase;
-    font-size: 250%;
-    padding-top: 8%;
+    font-size: 230%;
+    padding-top: 6%;
     color: #222222;
     font-weight: bold; }
   .why-us .container p {
     align-self: center;
-    padding: 8% 20%;
+    padding: 6% 20%;
     color: #A7A7A7;
-    font-size: 180%; }
+    font-size: 150%; }
   .why-us .container .article-container {
     display: flex;
     justify-content: space-between;
@@ -285,3 +382,78 @@ table {
     color: #626262;
     display: inline-block;
     margin-bottom: 100px; }
+
+.quote-text {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0; }
+  .quote-text .btn {
+    position: absolute;
+    top: 220px;
+    left: 43%;
+    padding: 20px 100px;
+    border: 2px solid white;
+    color: white;
+    font-size: 32px;
+    margin-left: -90px; }
+  .quote-text .btn:hover {
+    background-color: white;
+    color: black; }
+
+.quote {
+  position: relative; }
+  .quote .cont {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden; }
+    .quote .cont img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .quote .quote-text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0; }
+    .quote .quote-text .btn {
+      position: absolute;
+      top: 220px;
+      left: 43%;
+      padding: 20px 100px;
+      border: 2px solid white;
+      color: white;
+      font-size: 32px;
+      margin-left: -90px; }
+    .quote .quote-text .btn:hover {
+      background-color: white;
+      color: black; }
+
+.touch {
+  padding: 30px 0px; }
+  .touch .container .header h1 {
+    text-transform: uppercase;
+    font-size: 200%;
+    padding-top: 8%;
+    color: #222222;
+    font-weight: bold; }
+  .touch .container p {
+    align-self: center;
+    padding: 8% 20%;
+    color: #222222;
+    font-size: 135%; }
+
+.location {
+  text-transform: uppercase;
+  background-color: #F2F2F2; }
+  .location h1 {
+    font-size: 180%;
+    padding: 4% 45%;
+    padding-bottom: 2%;
+    font-weight: bold; }
