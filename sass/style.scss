@@ -1,11 +1,21 @@
 @import 'reset.scss';
 @import 'fonts.scss';
+.navbar{
+    background-color: #000000;
+}
+.logo{
+    width: 8%;
+    height: 10%;
+    padding-left: 1%;
+    padding-top: 1%;
+}
 .text{
     margin-left: 25%;
     font-size: 100%;
     height: 160px;
     vertical-align: middle;
    color:white;
+   
 }
 .headerbckgr{
     opacity: 50%;
@@ -17,9 +27,10 @@ background: linear-gradient(to bottom, rgba(227,145,71,1) 0%,rgba(227,145,71,0) 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', endColorstr='#00e39147',GradientType=0 ); /* IE6-9 */
 
 }
-.banner{
+.main-banner{
+    img{
     width: 100%;
-
+    }
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e39147+1,c6584d+99&1+0,0.8+100 */
 background: -moz-linear-gradient(top, rgba(227,145,71,1) 0%, rgba(227,145,71,1) 1%, rgba(198,88,77,0.8) 99%, rgba(198,88,77,0.8) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(227,145,71,1) 0%,rgba(227,145,71,1) 1%,rgba(198,88,77,0.8) 99%,rgba(198,88,77,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -33,7 +44,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', end
         .header{
             h1{
                 text-transform: uppercase;
-                font-size: 280%;
+                font-size: 250%;
                 padding-top: 8%;
                 color: #222222;
                 font-weight: bold;
@@ -44,7 +55,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', end
             align-self: center;
             padding: 8% 20%;
             color:#A7A7A7;
-            font-size: 190%;
+            font-size: 180%;
         }
     }
 }
@@ -58,9 +69,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', end
     .pure-text{
        .btn{
             position: absolute;
-            top: 220px;
-            left: 43%;
-            padding: 20px 100px;
+            top: 50%;
+            left: 50%;
+            padding: 20px 90px;
+            transform: translate(-50% ,-50%);
             border: 2px solid white;
             color: white;
             font-size: 32px;
@@ -103,11 +115,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', end
             }
         }
         .image-container{
-            img{
+            .imghv{
+                transition: 0.3s;
+                position: relative;
+                &:hover{
+                    .imghover{
+                        display: block;
+                        
+                    }
+                }
+            .imgcls{
+                overflow: hidden;
+                position: relative;
                 height: 420px;
-                width: 370px;
-                padding-bottom: 20px;
-            }
+
+                    img{
+                        position: absolute;
+                        transform: translate(-50% ,-50%);
+                        height:100%;
+                        width: auto;
+                        padding-bottom: 20px;
+                    }
+           }
+           .imghover{
+            position: absolute;
+            top:0%;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(#000000, 0.5);
+            display:none;
+           }
+        }
         }
     }
     .images-button{
@@ -172,10 +210,121 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e39147', end
             h1{
                 color: #222222;
                 font-size: 32px;
-                padding: 10% 0% 8% 0%;
+                padding: 8% 0% 5% 0%;
                 text-transform: uppercase;
                 font-weight: bold;
             }
         }
+    }
+}
+.icons{
+    padding-left: 8.8% ;
+    padding-top:5%;
+    padding-bottom: 6%;
+    img{
+        padding-left: 3%;
+        width: 17%;
+        
+    }
+}
+.about-us{
+    padding: 30px 0px;
+    .container{
+        .header{
+            h1{
+                text-transform: uppercase;
+                font-size: 250%;
+                padding-top: 8%;
+                color: #222222;
+                font-weight: bold;
+            }
+        }
+
+        p{
+            align-self: center;
+            padding: 8% 20%;
+            color:#A7A7A7;
+            font-size: 180%;
+        }
+
+        .imgabout{
+            img{
+                padding: 10px;
+                width: 270px;
+                height: 350px;
+            }
+        }
+
+    }
+}
+
+
+.video{
+    iframe{
+        width: 100%;
+        height: 520px;
+    }
+}
+
+
+.why-us{
+    padding: 30px 0px;
+    .container{
+        .header{
+            h1{
+                text-transform: uppercase;
+                font-size: 250%;
+                padding-top: 8%;
+                color: #222222;
+                font-weight: bold;
+            }
+        }
+
+        p{
+            align-self: center;
+            padding: 8% 20%;
+            color:#A7A7A7;
+            font-size: 180%;
+        }
+
+         .article-container{
+            display: flex;
+            justify-content: space-between;
+            margin-top:34px;
+            flex-wrap:wrap; 
+        }
+        
+         .article-container .article-item .article-text{
+            font-family: 'Ubuntu';
+            color: #B4AD9E;
+            width:100%;
+            font-size:14pt;
+            padding: 20px;
+            position: relative;
+            box-sizing:border-box;
+            color: #626262;
+            text-transform: uppercase;
+        }
+        
+         .article-container .article-item .article-text1{
+            font-family: 'Playfair Display';
+            width:100%;
+            font-size:30px;
+            box-sizing:border-box;
+            color: #626262;
+            padding: 30px 0px;
+        }
+        
+         .article-container .article-item .article-text2{
+            font-family: 'Playfair Display';
+            width:100%;
+            font-size:14px;
+            padding: 20px;
+            box-sizing:border-box;
+            color: #626262;
+            display: inline-block;
+            margin-bottom: 100px;
+        }
+        
     }
 }
