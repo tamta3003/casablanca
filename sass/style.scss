@@ -14,11 +14,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             display: flex;
             width: 100%;
             justify-content: space-between;
-            padding: 3% 0;
+            padding: 1.5% 0;
             color: white;
             text-transform: uppercase;
              h1{
-                 font-size:200% ;
+                 font-size:190% ;
              }
              .meniu{
                 list-style: none;
@@ -328,7 +328,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
         .header{
             h1{
                 text-transform: uppercase;
-                font-size: 230%;
+                font-size: 200%;
                 padding-top: 5.5%;
                 color: #222222;
                 font-weight: bold;
@@ -337,9 +337,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
 
         p{
             align-self: center;
-            padding: 6% 20%;
+            padding: 5% 20%;
             color:#A7A7A7;
-            font-size: 145%;
+            font-size: 125%;
         }
           .row{
             .imghv{
@@ -534,14 +534,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
         }
     }
 }
-.location{
-    text-transform: uppercase;
+.location{ 
     background-color: #F2F2F2;
-    
-    h1{
-        font-size: 180%;
-        padding: 4% 45%;
-        padding-bottom: 2%;
-        font-weight: bold;
+     .text-loc{     
+         padding: 7% 45%;
+         .header{
+            h1{
+                text-transform: uppercase;
+                color: #222222;
+                font-weight: bold;
+                margin-bottom: 12%;
+                font-size:104%;
+                margin-left:-3%;
+            }
+         }
+         .navigation{
+             margin-left:-3%;
+         }
+         .icn{
+             img{
+                 width: 16px;
+                 height: 19px;
+                 margin: 10% 0%;
+             }
+         }
+     }
+    }
+.end{
+    background-color: #222222;
+    .container{
+       h1{
+           color: white;
+           padding: 5% 30%;
+           font-size: 140%;
+       }
     }
 }
