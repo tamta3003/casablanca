@@ -27,6 +27,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
                   display: inline-block;
                   color: white;
                   font-size:120% ;
+                  a{
+                      color: white;
+                      -webkit-transition: 0.3s;
+                      -moz-transition: 0.3s;
+                      -o-transition: 0.3s;
+                       transition: 0.3s;
+                  }
+                  a:hover{
+                      color: #222222;
+                      text-decoration: none;
+                  }
               }
             }
         }
@@ -81,6 +92,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
         margin-top: 70px;
         margin-bottom: 30px;
         font-size: 24px;
+    
 
      }
         p{
@@ -101,7 +113,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             h1{
                 text-transform: uppercase;
                 font-size: 200%;
-                padding-top: 8%;
+                padding-top: 5.5%;
                 color: #222222;
                 font-weight: bold;
             }
@@ -142,12 +154,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
            .btn{
             position: absolute;
             top: 220px;
-            left: 43%;
+            left: 50%;
             padding: 20px 100px;
             border: 2px solid white;
             color: white;
             font-size: 32px;
-            margin-left:-90px;
+            transform: translateX(-50%);
         }
         .btn:hover {
             background-color: white;
@@ -177,7 +189,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
                 padding: 2%;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-                color:#A7A7A7;
+                 a{
+                    color:#A7A7A7;
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    -o-transition: 0.3s;
+                     transition: 0.3s;
+                    
+                 }
+                 a:hover{
+                    color: #222222;
+                    text-decoration: none;
+                }
                 }
                 .workli{
                     font-weight: bold;
@@ -217,10 +240,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             height: 100%;
             background-color:rgba(#000000, 0.5);
             display:none;
-            text-align: center;
-            color: white;
-            font-size: 40px;
-            padding-top: 50%;
+            
+            
+            h2{
+                text-align: center;
+                color: white;
+                font-size: 23px;
+                padding-top: 30%;
+                font-weight: bold;
+            }
+            h1{
+                text-align: center;
+                color: white;
+                font-size: 35px;
+                padding-top: 10%;
+                text-transform: capitalize;
+            
+            }
+            .hr-work{
+                width:80px;
+                background-color: #FF8215;
+                height: 2px;
+                align-self: center;
+                margin-top: 70px;
+                transform: translateX(155%);
+    }
            }
         }
         }
@@ -241,7 +285,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             transition: 0.3s;      
         }
         .btn1:hover {
-            background-color:black;
+            background-color: #332C2C;
             color:white;
           }
     }
@@ -252,11 +296,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             background-color: #222222;
             height: 3px;
             align-self: center;
-            margin-left: 45%;
             margin-top: 70px;
-            margin-bottom: 30px;
-            font-size: 24px;
-
+            top:70px;
+            transform: translateX(500%);
+            margin-bottom: 4.5%;
 }
 .help{
     position: relative;
@@ -275,30 +318,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
     }
 }
 
-    .help-text{
-        width: 100%;
-        height: 100%;
-        background-color: rgba( #000000,  0.3);
+.help-text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba( #000000,  0.3);
+    position: absolute;
+    top: 0;
+       .btn{
         position: absolute;
-        top: 0;
-           .btn{
-            position: absolute;
-            top: 220px;
-            left: 43%;
-            padding: 20px 100px;
-            border: 2px solid white;
-            color: white;
-            font-size: 32px;
-            margin-left:-90px;
-        }
-        .btn:hover {
-            background-color: white;
-            color:black;
-          }
+        top: 220px;
+        left: 50%;
+        padding: 20px 100px;
+        border: 2px solid white;
+        color: white;
+        font-size: 32px;
+        transform: translateX(-50%);
     }
+    .btn:hover {
+        background-color: white;
+        color:black;
+      }
+   }
 }
 
-.clients{ 
+.clients {
     background-color: #F4F4F4;
     .container{
         .client-header{
@@ -319,6 +362,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
     img{
         padding-left: 3%;
         width: 17%;
+        &:hover{
+            transform: scale(0.8);
+        }
         
     }
 }
@@ -364,6 +410,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
                         padding-bottom: 20px;
                         top: 50%;
                         left: 50%;
+                      
                     }
            }
            .imghover{
@@ -371,12 +418,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             top:0%;
             width: 100%;
             height: 100%;
-            background-color:rgba(#000000, 0.5);
+            background-color:rgba(#2019197e, 0.5);
             display:none;
             text-align: center;
-            color: white;
-            font-size: 40px;
+            color: #F2C49A;
             padding-top: 50%;
+          
+             h1{
+               padding-top: 60%;
+               font-size: 30px;
+               font-family: initial;
+               text-transform: capitalize;               
+            }
+            h2{
+                font-size: 25px;
+                text-transform: unset; 
+            }
            }
         }
         }
@@ -437,7 +494,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             font-size:30px;
             box-sizing:border-box;
             color: #626262;
-            padding: 30px 0px;
+            padding-bottom: 20px;
+            padding-top: 35px;
         }
         
          .article-container .article-item .article-text2{
@@ -453,6 +511,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
         
     }
 }
+  .news-header{
+      .article-container{
+          .article-item{
+            .article-image{
+                height: 30%;
+            }
+          }
+      }
+  }
 .quote-text{
     width: 100%;
     height: 100%;
@@ -467,7 +534,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
         border: 2px solid white;
         color: white;
         font-size: 32px;
-        margin-left:-90px;
+       
     }
     .btn:hover {
         background-color: white;
@@ -500,12 +567,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
            .btn{
             position: absolute;
             top: 220px;
-            left: 43%;
+            left: 50%;
             padding: 20px 100px;
             border: 2px solid white;
             color: white;
             font-size: 32px;
-            margin-left:-90px;
+            transform: translateX(-50%);
         }
         .btn:hover {
             background-color: white;
