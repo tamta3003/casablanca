@@ -629,11 +629,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
     }
 .end{
     background-color: #222222;
+    height: 100px;
     .container{
        h1{
            color: white;
-           padding: 5% 30%;
-           font-size: 140%;
+           text-align: center;
+           transform: translateY(200%);
+           font-size: 120%;
+           
        }
     }
 }

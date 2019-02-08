@@ -512,8 +512,10 @@ table {
       margin: 10% 0%; }
 
 .end {
-  background-color: #222222; }
+  background-color: #222222;
+  height: 100px; }
   .end .container h1 {
     color: white;
-    padding: 5% 30%;
-    font-size: 140%; }
+    text-align: center;
+    transform: translateY(200%);
+    font-size: 120%; }
