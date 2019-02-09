@@ -343,7 +343,8 @@ table {
     transition: 0.3s;
     position: relative; }
     .about-us .container .row .imghv:hover .imghover {
-      display: block; }
+      display: block;
+      border: 2px solid black; }
     .about-us .container .row .imghv .imgcls {
       overflow: hidden;
       position: relative;
@@ -353,7 +354,6 @@ table {
         transform: translate(-50%, -50%);
         height: 100%;
         width: auto;
-        padding-bottom: 20px;
         top: 50%;
         left: 50%; }
     .about-us .container .row .imghv .imghover {
@@ -364,7 +364,7 @@ table {
       background-color: rgba(32, 25, 25, 0.5);
       display: none;
       text-align: center;
-      color: #F2C49A;
+      color: white;
       padding-top: 50%; }
       .about-us .container .row .imghv .imghover h1 {
         padding-top: 60%;
@@ -422,8 +422,7 @@ table {
     padding: 20px;
     box-sizing: border-box;
     color: #626262;
-    display: inline-block;
-    margin-bottom: 100px; }
+    display: inline-block; }
 
 .news-header .article-container .article-item .article-image {
   height: 30%; }
@@ -480,7 +479,7 @@ table {
       color: black; }
 
 .touch {
-  padding: 30px 0px; }
+  text-align: center; }
   .touch .container .header h1 {
     text-transform: uppercase;
     font-size: 200%;
@@ -489,33 +488,308 @@ table {
     font-weight: bold; }
   .touch .container p {
     align-self: center;
-    padding: 8% 20%;
+    padding: 5% 20%;
     color: #222222;
     font-size: 135%; }
 
 .location {
-  background-color: #F2F2F2; }
+  background-color: #F2F2F2;
+  height: 280px; }
   .location .text-loc {
-    padding: 7% 45%; }
+    text-align: center;
+    transform: translateY(150%); }
     .location .text-loc .header h1 {
       text-transform: uppercase;
       color: #222222;
       font-weight: bold;
-      margin-bottom: 12%;
-      font-size: 104%;
-      margin-left: -3%; }
+      font-size: 165%;
+      transform: translateY(-550%); }
     .location .text-loc .navigation {
-      margin-left: -3%; }
+      font-size: 115%;
+      transform: translateY(-160%); }
     .location .text-loc .icn img {
-      width: 16px;
-      height: 19px;
-      margin: 10% 0%; }
+      width: 20px;
+      height: 25px;
+      transform: translateY(-380%); }
 
 .end {
   background-color: #222222;
-  height: 100px; }
+  height: 90px; }
   .end .container h1 {
     color: white;
     text-align: center;
     transform: translateY(200%);
     font-size: 120%; }
+
+@media (min-width: 1500px) and (max-width: 2660px) {
+  .main-header .container .text-header h1 {
+    font-size: 350%;
+    text-align: left;
+    margin-left: -500px;
+    padding: 20px 0; }
+  .main-header .container .text-header .meniu {
+    transform: translateX(25%); }
+    .main-header .container .text-header .meniu li {
+      padding: 25px 5px; }
+      .main-header .container .text-header .meniu li a {
+        font-size: 190%; }
+  #main .main-banner .container .header h1 {
+    font-size: 500%;
+    padding-top: 150px; }
+  #main .main-banner .container .hr-banner {
+    width: 300px;
+    margin-left: 35%;
+    margin-top: 140px; }
+  #main .main-banner .container p {
+    font-size: 220%;
+    padding: 10% 0px; }
+  #main .intro .container .header h1 {
+    font-size: 400%; }
+  #main .intro .container p {
+    font-size: 240%;
+    padding: 10% 0; }
+  #main .hr {
+    width: 250px;
+    height: 5px;
+    transform: translateX(163%);
+    margin-top: 12%;
+    margin-bottom: 9%; }
+  #main .pure .cont {
+    height: 650px; }
+  #main .pure .pure-text .btn {
+    padding: 30px 180px;
+    border: 3.5px solid white;
+    font-size: 350%; }
+  #main .work .container .work-header h1 {
+    font-size: 400%;
+    padding: 90px 0px 40px 0px; }
+  #main .work .container .work-nav ul li {
+    font-size: 200%;
+    margin-bottom: 35px; }
+  #main .work .container .container .row .imghv .imgcls {
+    height: 600px; }
+  #main .work .container .container .row .imghv .imghover h1 {
+    font-size: 50px; }
+  #main .work .container .container .row .imghv h2 {
+    font-size: 40px; }
+  #main .work .container .container .row .imghv .hr-work {
+    width: 100px;
+    transform: translateX(130%); }
+  #main .work .container .images-button .btn1 {
+    font-size: 43px;
+    padding: 18px 74px;
+    margin-bottom: 12%;
+    margin-top: 7%; }
+  #main .help .cont {
+    height: 650px; }
+  #main .help .help-text .btn {
+    padding: 30px 180px;
+    border: 3.5px solid white;
+    font-size: 350%; }
+  #main .clients .container .client-header h1 {
+    font-size: 60px;
+    padding: 15% 0% 3% 0%; }
+  #main .clients .container .icons {
+    padding-left: 7%;
+    padding-top: 5%;
+    padding-bottom: 6%; }
+    #main .clients .container .icons img {
+      width: 19%;
+      padding-left: 1%; }
+  #main .about-us .container .header h1 {
+    font-size: 450%;
+    padding-top: 9%; }
+  #main .about-us .container p {
+    padding: 9% 0%;
+    font-size: 230%; }
+  #main .about-us .container .row .imghv {
+    margin-bottom: 10%; }
+    #main .about-us .container .row .imghv .imgcls {
+      height: 550px; }
+  #main .video iframe {
+    height: 800px; }
+  #main .why-us .container .header h1 {
+    font-size: 500%;
+    padding-top: 8%; }
+  #main .why-us .container p {
+    font-size: 230%;
+    padding: 6% 0%; }
+  #main .why-us .container .news-header .article-container {
+    margin-top: 50px; }
+    #main .why-us .container .news-header .article-container .article-item .article-image {
+      height: 40%; }
+    #main .why-us .container .news-header .article-container .article-item .article-text1 {
+      font-size: 35px; }
+    #main .why-us .container .news-header .article-container .article-item .article-text2 {
+      font-size: 20px; }
+  #main .quote .cont {
+    height: 650px; }
+  #main .quote .quote-text .btn {
+    padding: 30px 180px;
+    border: 3.5px solid white;
+    font-size: 350%; }
+  #main .touch .container .header h1 {
+    font-size: 400%; }
+  #main .touch .container p {
+    font-size: 240%;
+    padding: 10% 0; }
+  #main .location {
+    height: 620px; }
+    #main .location .text-loc .header h1 {
+      font-size: 230%; }
+    #main .location .text-loc .navigation {
+      font-size: 200%; }
+    #main .location .text-loc .icn img {
+      width: 35px;
+      height: 40px; }
+  .end {
+    height: 180px; }
+    .end .container h1 {
+      font-size: 200%; } }
+
+@media (min-width: 993px) and (max-width: 1198px) {
+  #main .hr {
+    transform: translateX(415%); }
+  #main .touch .container p {
+    font-size: 170%;
+    padding: 10% 0; }
+  #main .intro .container p {
+    font-size: 170%;
+    padding: 10% 0; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .main-header .container .text-header h1 {
+    padding: 2% 0%;
+    font-size: 150%;
+    text-align: left; }
+  .main-header .container .text-header .meniu {
+    transform: translateX(5%); }
+    .main-header .container .text-header .meniu li {
+      font-size: 100%;
+      padding-left: 3px;
+      padding-top: 2.5%;
+      padding-bottom: 3%; }
+  #main .main-banner .container .header {
+    padding-top: 100px; }
+    #main .main-banner .container .header h1 {
+      font-size: 180%;
+      padding-top: 8%; }
+  #main .main-banner .container .hr-banner {
+    width: 100px;
+    margin-left: 40%;
+    margin-top: 10%; }
+  #main .main-banner .container p {
+    font-size: 120%;
+    padding: 10% 0px; }
+  #main .intro .container .header h1 {
+    font-size: 180%; }
+  #main .intro .container p {
+    font-size: 120%;
+    padding: 6% 0; }
+  #main .hr {
+    width: 100px;
+    height: 3px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    transform: translateX(283%); }
+  #main .pure .cont {
+    height: 250px; }
+  #main .pure .pure-text .btn {
+    padding: 15px 50px;
+    border: 2px solid white;
+    font-size: 150%;
+    top: 90px; }
+  #main .work .container .work-header h1 {
+    font-size: 160%;
+    padding: 50px 0px 10px 0px; }
+  #main .work .container .work-nav ul li {
+    font-size: 130%;
+    margin-bottom: 20px;
+    padding: 1%; }
+  #main .work .container .container .row .imghv .imgcls {
+    height: 300px; }
+  #main .work .container .container .row .imghv .imghover h1 {
+    padding-top: 10%;
+    font-size: 30px; }
+  #main .work .container .container .row .imghv h2 {
+    font-size: 22px;
+    padding-top: 40%; }
+  #main .work .container .container .row .imghv .hr-work {
+    width: 70px;
+    transform: translateX(95%);
+    margin-top: 30px; }
+  #main .work .container .images-button .btn1 {
+    font-size: 27px;
+    padding: 5px 10px;
+    margin-bottom: 8%;
+    margin-top: 6%; }
+  #main .help .cont {
+    height: 250px; }
+  #main .help .help-text .btn {
+    padding: 15px 50px;
+    border: 2px solid white;
+    font-size: 150%;
+    top: 90px; }
+  #main .about-us .container .header h1 {
+    font-size: 170%;
+    padding-top: 6%; }
+  #main .about-us .container p {
+    padding: 6% 0%;
+    font-size: 120%; }
+  #main .about-us .container .row .imghv {
+    margin-bottom: 7%; }
+    #main .about-us .container .row .imghv .imgcls {
+      height: 300px; }
+  #main .video iframe {
+    height: 350px; }
+  #main .why-us {
+    padding-top: 30px;
+    padding-bottom: 0; }
+    #main .why-us .container .header h1 {
+      font-size: 170%;
+      padding-top: 4%; }
+    #main .why-us .container p {
+      font-size: 120%;
+      padding: 3% 0%; }
+    #main .why-us .container .news-header .article-container .article-item .article-image {
+      height: 30%; }
+    #main .why-us .container .news-header .article-container .article-item .article-text1 {
+      font-size: 20px; }
+    #main .why-us .container .news-header .article-container .article-item .article-text2 {
+      font-size: 10.5px; }
+  #main .quote .cont {
+    height: 250px; }
+  #main .quote .quote-text .btn {
+    padding: 15px 50px;
+    border: 2px solid white;
+    font-size: 150%;
+    top: 90px; }
+  #main .touch .container .header h1 {
+    font-size: 180%; }
+  #main .touch .container p {
+    font-size: 120%;
+    padding: 6% 0; }
+  #main .location {
+    height: 250px; }
+    #main .location .text-loc .header h1 {
+      font-size: 140%; }
+    #main .location .text-loc .navigation {
+      font-size: 100%; }
+    #main .location .text-loc .icn img {
+      width: 18px;
+      height: 23px; }
+  .end .container h1 {
+    font-size: 110%; } }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .main-header .container .text-header h1 {
+    font-size: 140%;
+    transform: translateX(-30%);
+    padding: 2.2% 0; }
+  .main-header .container .text-header .meniu li {
+    font-size: 100%;
+    padding-left: 3px;
+    display: inline-block;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%; } }
