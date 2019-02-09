@@ -39,6 +39,12 @@ table {
   font-family: 'BIG JOHN';
   src: url("../fonts/BIG JOHN.otf") url("../fonts/Slim Joe.otf") url("../fonts/befonts.com.url") url("../fonts/Apache LLicense.txt"); }
 
+.burger {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/burger.svg");
+  display: none; }
+
 .main-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e39147+1,e39147+99&1+0,0.8+0 */
   background: -moz-linear-gradient(top, rgba(227, 145, 71, 0.8) 0%, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 99%);
@@ -781,15 +787,283 @@ table {
   .end .container h1 {
     font-size: 110%; } }
 
-@media (min-width: 426px) and (max-width: 768px) {
-  .main-header .container .text-header h1 {
-    font-size: 140%;
-    transform: translateX(-30%);
-    padding: 2.2% 0; }
-  .main-header .container .text-header .meniu li {
+@media (min-width: 576px) and (max-width: 768px) {
+  .main-header .container {
+    padding-left: 0; }
+    .main-header .container .text-header {
+      width: 105%;
+      padding: 2% 0; }
+      .main-header .container .text-header h1 {
+        font-size: 130%;
+        transform: translateX(-20%);
+        padding: 2.2% 0; }
+      .main-header .container .text-header .meniu li {
+        font-size: 80%;
+        padding-left: 1px;
+        display: inline-block;
+        color: white;
+        padding-top: 3.4%;
+        padding-bottom: 3%; }
+  #main .main-banner .container .header {
+    padding-top: 100px; }
+    #main .main-banner .container .header h1 {
+      font-size: 180%;
+      padding-top: 8%; }
+  #main .main-banner .container .hr-banner {
+    width: 100px;
+    margin-left: 40%;
+    margin-top: 12%; }
+  #main .main-banner .container p {
     font-size: 100%;
-    padding-left: 3px;
-    display: inline-block;
-    color: white;
-    padding-top: 3%;
-    padding-bottom: 3%; } }
+    padding: 10% 0px; }
+  #main .main-banner .banner-img {
+    height: 90vh; }
+    #main .main-banner .banner-img .img {
+      height: 90vh; }
+  #main .main-banner .banner-section {
+    height: 90%; }
+  #main .intro {
+    padding: 15px 0; }
+    #main .intro .container .header h1 {
+      font-size: 180%; }
+    #main .intro .container p {
+      font-size: 100%;
+      padding: 6% 0; }
+  #main .hr {
+    width: 100px;
+    height: 3px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    transform: translateX(193%); }
+  #main .pure .cont {
+    height: 200px; }
+  #main .pure .pure-text .btn {
+    padding: 8px 35px;
+    border: 1.5px solid white;
+    font-size: 130%;
+    top: 70px; }
+  #main .work .container .work-header h1 {
+    font-size: 160%;
+    padding: 50px 0px 10px 0px; }
+  #main .work .container .work-nav ul li {
+    font-size: 103%;
+    margin-bottom: 20px;
+    padding: 1%; }
+  #main .work .container .container .row .imghv .imgcls {
+    height: 300px; }
+  #main .work .container .container .row .imghv .imghover h1 {
+    padding-top: 10%;
+    font-size: 30px; }
+  #main .work .container .container .row .imghv h2 {
+    font-size: 22px;
+    padding-top: 40%; }
+  #main .work .container .container .row .imghv .hr-work {
+    width: 70px;
+    transform: translateX(99%);
+    margin-top: 30px; }
+  #main .work .container .images-button .btn1 {
+    font-size: 25px;
+    padding: 3px 8px;
+    margin-bottom: 7%;
+    margin-top: 6%; }
+  #main .help .cont {
+    height: 200px; }
+  #main .help .help-text .btn {
+    padding: 8px 35px;
+    border: 1.5px solid white;
+    font-size: 130%;
+    top: 70px; }
+  #main .clients .container .client-header h1 {
+    font-size: 30px;
+    padding: 9% 0% 2% 0%; }
+  #main .clients .container .icons {
+    padding-left: 0%; }
+    #main .clients .container .icons a .img {
+      width: 25%;
+      padding-left: 1%; }
+  #main .about-us .container .header h1 {
+    font-size: 200%;
+    padding-top: 6%; }
+  #main .about-us .container p {
+    padding: 6% 0%;
+    font-size: 105%; }
+  #main .about-us .container .row .imghv .imgcls img {
+    padding-bottom: 5%; }
+  #main .about-us .container .row .imghv .imghover {
+    height: 97%; }
+  #main .video iframe {
+    height: 290px; }
+  #main .why-us {
+    padding-top: 15px;
+    padding-bottom: 0; }
+    #main .why-us .container .header h1 {
+      font-size: 140%;
+      padding-top: 2%; }
+    #main .why-us .container p {
+      font-size: 100%;
+      padding: 1.5% 0%; }
+    #main .why-us .container .news-header .article-container .article-item {
+      transform: translateY(7.5%); }
+      #main .why-us .container .news-header .article-container .article-item .article-image {
+        height: 25%; }
+      #main .why-us .container .news-header .article-container .article-item .article-text1 {
+        font-size: 15px; }
+      #main .why-us .container .news-header .article-container .article-item .article-text2 {
+        font-size: 10px; }
+  #main .quote .cont {
+    height: 200px; }
+  #main .quote .quote-text .btn {
+    padding: 8px 35px;
+    border: 1.5px solid white;
+    font-size: 130%;
+    top: 70px; }
+  #main .touch {
+    padding: 15px 0; }
+    #main .touch .container .header h1 {
+      font-size: 180%; }
+    #main .touch .container p {
+      font-size: 100%;
+      padding: 6% 0; }
+  #main .location {
+    height: 230px; }
+    #main .location .text-loc .header h1 {
+      font-size: 130%; }
+    #main .location .text-loc .navigation {
+      font-size: 100%; }
+    #main .location .text-loc .icn img {
+      width: 18px;
+      height: 23px; }
+  .end .container h1 {
+    font-size: 100%; } }
+
+@media (max-width: 576px) {
+  .main-header .container .text-header .h1 {
+    font-size: 150%;
+    padding: 3% 0; }
+  .main-header .container .text-header .meniu {
+    display: none; }
+  .main-header .container .text-header .burger {
+    display: inline-block; }
+  #main .main-banner .container .header {
+    padding-top: 100px; }
+    #main .main-banner .container .header h1 {
+      font-size: 180%;
+      padding-top: 8%; }
+  #main .main-banner .container .hr-banner {
+    width: 100px;
+    margin-left: 40%;
+    margin-top: 12%; }
+  #main .main-banner .container p {
+    font-size: 100%;
+    padding: 10% 0px; }
+  #main .main-banner .banner-img {
+    height: 90vh; }
+    #main .main-banner .banner-img .img {
+      height: 90vh; }
+  #main .main-banner .banner-section {
+    height: 90%; }
+  #main .intro {
+    padding: 15px 0; }
+    #main .intro .container .header h1 {
+      font-size: 180%; }
+    #main .intro .container p {
+      font-size: 90%;
+      padding: 6% 0; }
+  #main .hr {
+    width: 100px;
+    height: 3px;
+    margin: 7% 39%;
+    transform: none; }
+  #main .pure .cont {
+    height: 200px; }
+  #main .pure .pure-text .btn {
+    padding: 8px 35px;
+    border: 1.5px solid white;
+    font-size: 130%;
+    top: 70px; }
+  #main .work .container .work-header h1 {
+    font-size: 160%;
+    padding: 50px 0px 10px 0px; }
+  #main .work .container .work-nav ul li {
+    font-size: 150%;
+    margin-bottom: 20px;
+    padding: 1%; }
+  #main .work .container .container .row .imghv .imgcls img {
+    width: 99%; }
+  #main .work .container .container .row .imghv .hr-work {
+    width: 80px;
+    transform: translateX(240%);
+    margin-top: 30px; }
+  #main .work .container .images-button .btn1 {
+    font-size: 25px;
+    padding: 3px 8px;
+    margin-bottom: 7%;
+    margin-top: 6%; }
+  #main .help .cont {
+    height: 200px; }
+  #main .help .help-text .btn {
+    padding: 8px 35px;
+    border: 1.5px solid white;
+    font-size: 130%;
+    top: 70px; }
+  #main .about-us {
+    display: none; }
+  #main .video iframe {
+    height: 250px; }
+  #main .why-us {
+    padding-top: 30px;
+    padding-bottom: 15px; }
+    #main .why-us .container .header h1 {
+      font-size: 140%;
+      padding-top: 4%;
+      padding-bottom: 4%; }
+    #main .why-us .container p {
+      font-size: 90%;
+      padding: 4% 0%; }
+  #main .quote .cont {
+    height: 200px; }
+  #main .quote .quote-text .btn {
+    padding: 8px 35px;
+    border: 1.5px solid white;
+    font-size: 130%;
+    top: 70px; }
+  #main .touch {
+    padding: 15px 0; }
+    #main .touch .container .header h1 {
+      font-size: 160%; }
+    #main .touch .container p {
+      font-size: 90%;
+      padding: 6% 0; }
+  #main .location {
+    height: 230px; }
+    #main .location .text-loc .header h1 {
+      font-size: 130%; }
+    #main .location .text-loc .navigation {
+      font-size: 100%; }
+    #main .location .text-loc .icn img {
+      width: 18px;
+      height: 23px; }
+  .end {
+    height: 70px; }
+    .end .container h1 {
+      font-size: 100%; } }
+
+@media (min-width: 300) and (min-width: 439) {
+  #main .main-banner .container .header {
+    padding-top: 80px; }
+    #main .main-banner .container .header h1 {
+      font-size: 140%;
+      padding-top: 6%; }
+  #main .main-banner .container .hr-banner {
+    width: 90px;
+    margin-left: 38%;
+    margin-top: 10%; }
+  #main .main-banner .container p {
+    font-size: 80%;
+    padding: 8% 0px; }
+  #main .main-banner .banner-img {
+    height: 90vh; }
+    #main .main-banner .banner-img .img {
+      height: 90vh; }
+  #main .main-banner .banner-section {
+    height: 90%; } }
