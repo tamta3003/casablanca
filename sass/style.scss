@@ -1380,7 +1380,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
         .container{
             .client-header{
                 h1{
-                 font-size: 30px;
+                 font-size: 20px;
                  padding: 9% 0% 2% 0%;
                 }
             }
@@ -1544,62 +1544,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
                .header{
                    padding-top: 100px;
                    h1{
-                       font-size: 180%;
-                       padding-top: 8% ;
+                    font-size: 140%;
+                    padding-top: 2%;
                    }
                }
                .hr-banner{
-                   width: 100px;
-                   margin-left:40%;
-                   margin-top:12%;
+                   width: 80px;
+                   margin-left:39%;
+                   margin-top:10%;
                }
                p{
-                  font-size: 100%;
-                  padding: 10% 0px;
+                  font-size: 80%;
+                  padding: 4% 0%;
                }
            } 
            .banner-img{
-            height: 90vh;
+            height: 75vh;
             .img{
-                height: 90vh;
+                height: 75vh;
             }
            }
            .banner-section{
-            height: 90%;
+            height: 75%;
            }
          }
          .intro{
-             padding: 15px 0;
+             padding: 7px 0;
             .container{
              .header{
               h1{
-                  font-size: 180%;
+                  font-size: 140%;
               }
              }
              p{
-                 font-size:90%;
-                 padding: 6% 0;
+                 font-size:80%;
+                 padding: 3% 0;
              }
            }
          }
         .hr{
-            width:100px;
-            height: 3px;
-            margin: 7% 39%;
+            width:80px;
+            height: 2px;
+            margin: 6% 39.5%;
             transform: none;
             
         }
         .pure{
             .cont{
-                height:200px;
+                height:150px;
                
             }
            .pure-text{
                .btn{
-                   padding: 8px 35px;
-                   border: 1.5px solid white;
-                   font-size:130%;
-                   top: 70px;
+                   padding: 6px 20px;
+                   border: 1px solid white;
+                   font-size:110%;
+                   top: 53px;
+                   text-align: center;
                }
            }
        
@@ -1608,15 +1609,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
             .container{
               .work-header{
                 h1{
-                    font-size: 160%;
-                    padding: 50px 0px 10px 0px;
+                    font-size: 140%;
+                    padding: 30px 0px 10px 0px;
                 }
             }
              .work-nav{
                  ul{
                      li{
-                         font-size:150%;
-                         margin-bottom: 20px;
+                         font-size:100%;
+                         margin-bottom: 10px;
                          padding: 1%;
                      }
                  }
@@ -1631,7 +1632,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
                     }
                      .hr-work{
                         width: 80px;
-                        transform: translateX(240%);
+                         
                         margin-top: 30px;
                      }
                 }
@@ -1650,29 +1651,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
     }
     .help{
         .cont{
-            height:200px;
+            height:150px;
            
         }
        .help-text{
            .btn{
-               padding: 8px 35px;
-               border: 1.5px solid white;
-               font-size:130%;
-               top: 70px;
+               padding: 6px 20px;
+               border: 1px solid white;
+               font-size:110%;
+               top: 53px;
+               text-align: center;
            }
-        }
+       }
        }
        .about-us{
         display: none;
     }
     .video{
         iframe{
-          height: 250px;
+          height: 170px;
         }
     }
     .why-us{
-        padding-top: 30px;
-        padding-bottom:15px;
+        padding-top: 15px;
+        padding-bottom:7px;
         .container{
             .header{
                 h1{
@@ -1682,25 +1684,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
                 }
             }
             p{
-                font-size: 90%;
+                font-size: 80%;
                 padding: 4% 0%;
             }
+            .news-header{
+                .article-container{
+                    .article-item{
+                        .article-image{
+                            height: 20%;
+                        }
+                      .article-text1{
+                           font-size: 20px;
+                           padding-bottom: 10px;
+                           padding-top: 15px
+                      }
+                      .article-text2{
+                          font-size: 12px;
+                      }
+                    }
+                }
+            }
+            
         }
     }
     .quote{
         .cont{
-            height:200px;
+            height:150px;
            
         }
        .quote-text{
            .btn{
-               padding: 8px 35px;
-               border: 1.5px solid white;
-               font-size:130%;
-               top: 70px;
+               padding: 6px 20px;
+               border: 1px solid white;
+               font-size:110%;
+               top: 53px;
+               text-align: center;
            }
        }
-   
     }
     .touch{
         padding: 15px 0;
@@ -1741,74 +1761,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
         .container{
             h1{
                 font-size: 100%;
+                padding-top: 6%;
+                transform: none;
             }
         }
       }
     
 }
-@media (min-width:300) and (min-width:439){
-  
-    #main{
-        .main-banner{
-           .container{
-               .header{
-                   padding-top: 80px;
-                   h1{
-                       font-size: 140%;
-                       padding-top: 6% ;
-                   }
-               }
-               .hr-banner{
-                   width: 90px;
-                   margin-left:38%;
-                   margin-top:10%;
-               }
-               p{
-                  font-size: 80%;
-                  padding: 8% 0px;
-               }
-           } 
-           .banner-img{
-            height: 90vh;
-            .img{
-                height: 90vh;
-            }
-           }
-           .banner-section{
-            height: 90%;
-           }
-         }
-        }
-
-
-
-
-
-
-
-} 
-
-
-
-
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    

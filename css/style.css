@@ -874,7 +874,7 @@ table {
     font-size: 130%;
     top: 70px; }
   #main .clients .container .client-header h1 {
-    font-size: 30px;
+    font-size: 20px;
     padding: 9% 0% 2% 0%; }
   #main .clients .container .icons {
     padding-left: 0%; }
@@ -947,52 +947,52 @@ table {
   #main .main-banner .container .header {
     padding-top: 100px; }
     #main .main-banner .container .header h1 {
-      font-size: 180%;
-      padding-top: 8%; }
+      font-size: 140%;
+      padding-top: 2%; }
   #main .main-banner .container .hr-banner {
-    width: 100px;
-    margin-left: 40%;
-    margin-top: 12%; }
+    width: 80px;
+    margin-left: 39%;
+    margin-top: 10%; }
   #main .main-banner .container p {
-    font-size: 100%;
-    padding: 10% 0px; }
+    font-size: 80%;
+    padding: 4% 0%; }
   #main .main-banner .banner-img {
-    height: 90vh; }
+    height: 75vh; }
     #main .main-banner .banner-img .img {
-      height: 90vh; }
+      height: 75vh; }
   #main .main-banner .banner-section {
-    height: 90%; }
+    height: 75%; }
   #main .intro {
-    padding: 15px 0; }
+    padding: 7px 0; }
     #main .intro .container .header h1 {
-      font-size: 180%; }
+      font-size: 140%; }
     #main .intro .container p {
-      font-size: 90%;
-      padding: 6% 0; }
+      font-size: 80%;
+      padding: 3% 0; }
   #main .hr {
-    width: 100px;
-    height: 3px;
-    margin: 7% 39%;
+    width: 80px;
+    height: 2px;
+    margin: 6% 39.5%;
     transform: none; }
   #main .pure .cont {
-    height: 200px; }
+    height: 150px; }
   #main .pure .pure-text .btn {
-    padding: 8px 35px;
-    border: 1.5px solid white;
-    font-size: 130%;
-    top: 70px; }
+    padding: 6px 20px;
+    border: 1px solid white;
+    font-size: 110%;
+    top: 53px;
+    text-align: center; }
   #main .work .container .work-header h1 {
-    font-size: 160%;
-    padding: 50px 0px 10px 0px; }
+    font-size: 140%;
+    padding: 30px 0px 10px 0px; }
   #main .work .container .work-nav ul li {
-    font-size: 150%;
-    margin-bottom: 20px;
+    font-size: 100%;
+    margin-bottom: 10px;
     padding: 1%; }
   #main .work .container .container .row .imghv .imgcls img {
     width: 99%; }
   #main .work .container .container .row .imghv .hr-work {
     width: 80px;
-    transform: translateX(240%);
     margin-top: 30px; }
   #main .work .container .images-button .btn1 {
     font-size: 25px;
@@ -1000,33 +1000,43 @@ table {
     margin-bottom: 7%;
     margin-top: 6%; }
   #main .help .cont {
-    height: 200px; }
+    height: 150px; }
   #main .help .help-text .btn {
-    padding: 8px 35px;
-    border: 1.5px solid white;
-    font-size: 130%;
-    top: 70px; }
+    padding: 6px 20px;
+    border: 1px solid white;
+    font-size: 110%;
+    top: 53px;
+    text-align: center; }
   #main .about-us {
     display: none; }
   #main .video iframe {
-    height: 250px; }
+    height: 170px; }
   #main .why-us {
-    padding-top: 30px;
-    padding-bottom: 15px; }
+    padding-top: 15px;
+    padding-bottom: 7px; }
     #main .why-us .container .header h1 {
       font-size: 140%;
       padding-top: 4%;
       padding-bottom: 4%; }
     #main .why-us .container p {
-      font-size: 90%;
+      font-size: 80%;
       padding: 4% 0%; }
+    #main .why-us .container .news-header .article-container .article-item .article-image {
+      height: 20%; }
+    #main .why-us .container .news-header .article-container .article-item .article-text1 {
+      font-size: 20px;
+      padding-bottom: 10px;
+      padding-top: 15px; }
+    #main .why-us .container .news-header .article-container .article-item .article-text2 {
+      font-size: 12px; }
   #main .quote .cont {
-    height: 200px; }
+    height: 150px; }
   #main .quote .quote-text .btn {
-    padding: 8px 35px;
-    border: 1.5px solid white;
-    font-size: 130%;
-    top: 70px; }
+    padding: 6px 20px;
+    border: 1px solid white;
+    font-size: 110%;
+    top: 53px;
+    text-align: center; }
   #main .touch {
     padding: 15px 0; }
     #main .touch .container .header h1 {
@@ -1046,24 +1056,6 @@ table {
   .end {
     height: 70px; }
     .end .container h1 {
-      font-size: 100%; } }
-
-@media (min-width: 300) and (min-width: 439) {
-  #main .main-banner .container .header {
-    padding-top: 80px; }
-    #main .main-banner .container .header h1 {
-      font-size: 140%;
-      padding-top: 6%; }
-  #main .main-banner .container .hr-banner {
-    width: 90px;
-    margin-left: 38%;
-    margin-top: 10%; }
-  #main .main-banner .container p {
-    font-size: 80%;
-    padding: 8% 0px; }
-  #main .main-banner .banner-img {
-    height: 90vh; }
-    #main .main-banner .banner-img .img {
-      height: 90vh; }
-  #main .main-banner .banner-section {
-    height: 90%; } }
+      font-size: 100%;
+      padding-top: 6%;
+      transform: none; } }
