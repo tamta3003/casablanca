@@ -527,132 +527,281 @@ table {
     transform: translateY(200%);
     font-size: 120%; }
 
-@media (min-width: 1500px) and (max-width: 2660px) {
-  .main-header .container .text-header h1 {
-    font-size: 350%;
-    text-align: left;
-    margin-left: -500px;
-    padding: 20px 0; }
-  .main-header .container .text-header .meniu {
-    transform: translateX(25%); }
-    .main-header .container .text-header .meniu li {
-      padding: 25px 5px; }
-      .main-header .container .text-header .meniu li a {
-        font-size: 190%; }
-  #main .main-banner .container .header h1 {
-    font-size: 500%;
-    padding-top: 150px; }
-  #main .main-banner .container .hr-banner {
-    width: 300px;
-    margin-left: 35%;
-    margin-top: 140px; }
-  #main .main-banner .container p {
-    font-size: 220%;
-    padding: 10% 0px; }
-  #main .intro .container .header h1 {
-    font-size: 400%; }
-  #main .intro .container p {
-    font-size: 240%;
-    padding: 10% 0; }
-  #main .hr {
-    width: 250px;
-    height: 5px;
-    transform: translateX(163%);
-    margin-top: 12%;
-    margin-bottom: 9%; }
-  #main .pure .cont {
-    height: 650px; }
-  #main .pure .pure-text .btn {
-    padding: 30px 180px;
-    border: 3.5px solid white;
-    font-size: 350%; }
-  #main .work .container .work-header h1 {
-    font-size: 400%;
-    padding: 90px 0px 40px 0px; }
-  #main .work .container .work-nav ul li {
-    font-size: 200%;
-    margin-bottom: 35px; }
-  #main .work .container .container .row .imghv .imgcls {
-    height: 600px; }
-  #main .work .container .container .row .imghv .imghover h1 {
-    font-size: 50px; }
-  #main .work .container .container .row .imghv h2 {
-    font-size: 40px; }
-  #main .work .container .container .row .imghv .hr-work {
-    width: 100px;
-    transform: translateX(130%); }
-  #main .work .container .images-button .btn1 {
-    font-size: 43px;
-    padding: 18px 74px;
-    margin-bottom: 12%;
-    margin-top: 7%; }
-  #main .help .cont {
-    height: 650px; }
-  #main .help .help-text .btn {
-    padding: 30px 180px;
-    border: 3.5px solid white;
-    font-size: 350%; }
-  #main .clients .container .client-header h1 {
-    font-size: 60px;
-    padding: 15% 0% 3% 0%; }
-  #main .clients .container .icons {
-    padding-left: 7%;
-    padding-top: 5%;
-    padding-bottom: 6%; }
-    #main .clients .container .icons img {
-      width: 19%;
-      padding-left: 1%; }
-  #main .about-us .container .header h1 {
-    font-size: 450%;
-    padding-top: 9%; }
-  #main .about-us .container p {
-    padding: 9% 0%;
-    font-size: 230%; }
-  #main .about-us .container .row .imghv {
-    margin-bottom: 10%; }
-    #main .about-us .container .row .imghv .imgcls {
-      height: 550px; }
-  #main .video iframe {
-    height: 800px; }
-  #main .why-us .container .header h1 {
-    font-size: 500%;
-    padding-top: 8%; }
-  #main .why-us .container p {
-    font-size: 230%;
-    padding: 6% 0%; }
-  #main .why-us .container .news-header .article-container {
-    margin-top: 50px; }
-    #main .why-us .container .news-header .article-container .article-item .article-image {
-      height: 40%; }
-    #main .why-us .container .news-header .article-container .article-item .article-text1 {
-      font-size: 35px; }
-    #main .why-us .container .news-header .article-container .article-item .article-text2 {
-      font-size: 20px; }
-  #main .quote .cont {
-    height: 650px; }
-  #main .quote .quote-text .btn {
-    padding: 30px 180px;
-    border: 3.5px solid white;
-    font-size: 350%; }
-  #main .touch .container .header h1 {
-    font-size: 400%; }
-  #main .touch .container p {
-    font-size: 240%;
-    padding: 10% 0; }
-  #main .location {
-    height: 620px; }
-    #main .location .text-loc .header h1 {
-      font-size: 230%; }
-    #main .location .text-loc .navigation {
-      font-size: 200%; }
-    #main .location .text-loc .icn img {
-      width: 35px;
-      height: 40px; }
-  .end {
-    height: 180px; }
-    .end .container h1 {
-      font-size: 200%; } }
+/*
+@media (min-width:1500px) and  (max-width: 2660px) {
+         
+   .main-header{
+       .container{
+           .text-header{
+             h1{
+                 font-size: 350%;
+                 text-align: left;
+                 margin-left: -500px;
+                 padding: 20px 0;
+             }
+            .meniu{
+                transform: translateX(25%);
+             li{
+                padding: 25px 5px;
+                 a{
+                    font-size: 190%;
+                 }
+             }
+           }
+        }
+       }
+   }
+ #main{
+  .main-banner{
+     .container{
+         .header{
+             h1{
+                 font-size: 500%;
+                 padding-top: 150px ;
+             }
+         }
+         .hr-banner{
+             width: 300px;
+             margin-left:35%;
+             margin-top:140px;
+         }
+         p{
+            font-size: 220%;
+            padding: 10% 0px;
+         }
+     } 
+   }
+    
+  .intro{
+     .container{
+      .header{
+       h1{
+           font-size: 400%;
+       }
+      }
+      p{
+          font-size:240%;
+          padding: 10% 0;
+      }
+    }
+  }
+    .hr{
+        width:250px;
+        height: 5px;
+        transform:translateX(163%);
+        margin-top: 12%;
+        margin-bottom: 9%;
+    }
+ .pure{
+     .cont{
+         height:650px;
+        
+     }
+    .pure-text{
+        .btn{
+            padding: 30px 180px;
+            border: 3.5px solid white;
+            font-size:350%;
+        }
+    }
 
+ }
+   .work{
+       .container{
+         .work-header{
+           h1{
+               font-size: 400%;
+               padding: 90px 0px 40px 0px;
+           }
+       }
+        .work-nav{
+            ul{
+                li{
+                    font-size:200%;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        .container{
+            .row{
+                .imghv{
+                    .imgcls{
+                        height: 600px;
+                    }
+                    .imghover{
+                        h1{
+                         font-size: 50px;
+                        }
+                    }
+                    h2{
+                     font-size: 40px;
+                    }
+                    .hr-work{
+                        width: 100px;
+                        transform: translateX(130%);
+                    }
+                }
+            }
+        }
+        .images-button{
+            .btn1{
+                font-size: 43px;
+                padding: 18px 74px;
+                margin-bottom: 12%;   
+                margin-top: 7%;  
+            }
+        }
+   }
+}
+.help{
+    .cont{
+        height:650px;
+       
+    }
+   .help-text{
+       .btn{
+           padding: 30px 180px;
+           border: 3.5px solid white;
+           font-size:350%;
+       }
+   }
+
+}
+  .clients{
+      .container{
+        .client-header{
+            h1{
+                font-size: 60px;
+                padding: 15% 0% 3% 0%;
+            }
+        }
+        .icons{
+            padding-left: 7% ;
+            padding-top:5%;
+            padding-bottom: 6%;
+            img{
+                width: 19%;
+                padding-left: 1%;
+            }
+        }
+      }
+  }
+  .about-us{
+      .container{
+          .header{
+              h1{
+                  font-size: 450%;
+                  padding-top: 9%;
+              }
+          }
+          p{
+              padding: 9% 0%;
+              font-size: 230%;
+          }
+         .row{
+             .imghv{
+                margin-bottom: 10%;
+                 .imgcls{
+                  height: 550px;
+                 }
+             }
+         }
+      }
+  }
+ .video{
+     iframe{
+       height: 800px;
+     }
+ }
+  .why-us{
+      .container{
+          .header{
+              h1{
+                  font-size: 500%;
+                  padding-top: 8%;
+              }
+          }
+          p{
+              font-size: 230%;
+              padding: 6% 0%;
+          }
+          .news-header{
+              .article-container{
+                  margin-top: 50px;
+                  .article-item{
+                      .article-image{
+                          height: 40%;
+                      }
+                    .article-text1{
+                         font-size: 35px;
+                    }
+                    .article-text2{
+                        font-size: 20px;
+                    }
+                  }
+              }
+          }
+      }
+  }
+  .quote{
+    .cont{
+        height:650px;
+       
+    }
+   .quote-text{
+       .btn{
+           padding: 30px 180px;
+           border: 3.5px solid white;
+           font-size:350%;
+       }
+   }
+
+}
+.touch{
+    .container{
+     .header{
+      h1{
+          font-size: 400%;
+      }
+     }
+     p{
+         font-size:240%;
+         padding: 10% 0;
+     }
+   }
+ }
+  .location{
+      height: 620px;
+      .text-loc{
+          .header{
+              h1{
+                  font-size: 230%;
+              }
+          }
+          .navigation{
+              font-size: 200%
+          }
+          .icn{
+              img{
+                  width: 35px;
+                  height:40px;
+              }
+          }
+      }
+  }
+  
+ }
+
+ .end{
+    height: 180px;
+    .container{
+        h1{
+            font-size: 200%;
+        }
+    }
+}
+}
+*/
 @media (min-width: 993px) and (max-width: 1198px) {
   #main .hr {
     transform: translateX(415%); }
