@@ -39,12 +39,7 @@ table {
   font-family: 'BIG JOHN';
   src: url("../fonts/BIG JOHN.otf") url("../fonts/Slim Joe.otf") url("../fonts/befonts.com.url") url("../fonts/Apache LLicense.txt"); }
 
-.burger {
-  width: 30px;
-  height: 30px;
-  background-image: url("../images/burger.svg");
-  display: none; }
-
+/* useless css */
 .main-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e39147+1,e39147+99&1+0,0.8+0 */
   background: -moz-linear-gradient(top, rgba(227, 145, 71, 0.8) 0%, rgba(227, 145, 71, 0.8) 1%, rgba(227, 145, 71, 0.8) 99%);
@@ -110,14 +105,16 @@ table {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', endColorstr='#cc991d1d',GradientType=1 );
   /* IE6-9 */ }
-  .main-banner .banner-section .container .header {
-    padding-top: 110px; }
-    .main-banner .banner-section .container .header h1 {
-      text-transform: uppercase;
-      font-size: 280%;
-      padding-top: 7%;
-      color: white;
-      font-weight: bold; }
+  .main-banner .banner-section .container.text-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .main-banner .banner-section .container .header h1 {
+    text-transform: uppercase;
+    font-size: 280%;
+    padding-top: 7%;
+    color: white;
+    font-weight: bold; }
   .main-banner .banner-section .container .hr-banner {
     width: 100px;
     background-color: white;
@@ -260,7 +257,7 @@ table {
   text-decoration: none;
   font-size: 24px;
   color: #222222;
-  border: 1px solid #222222;
+  border: 2.5px solid black;
   display: inline-block;
   padding: 10px 40px;
   text-transform: uppercase;
@@ -819,11 +816,9 @@ table {
       padding-left: 3px;
       padding-top: 2.5%;
       padding-bottom: 3%; }
-  #main .main-banner .container .header {
-    padding-top: 100px; }
-    #main .main-banner .container .header h1 {
-      font-size: 180%;
-      padding-top: 8%; }
+  #main .main-banner .container .header h1 {
+    font-size: 180%;
+    padding-top: 8%; }
   #main .main-banner .container .hr-banner {
     width: 100px;
     margin-left: 40%;
@@ -952,11 +947,9 @@ table {
         color: white;
         padding-top: 3.4%;
         padding-bottom: 3%; }
-  #main .main-banner .container .header {
-    padding-top: 100px; }
-    #main .main-banner .container .header h1 {
-      font-size: 180%;
-      padding-top: 8%; }
+  #main .main-banner .container .header h1 {
+    font-size: 180%;
+    padding-top: 8%; }
   #main .main-banner .container .hr-banner {
     width: 100px;
     margin-left: 40%;
@@ -1089,18 +1082,9 @@ table {
     font-size: 100%; } }
 
 @media (max-width: 576px) {
-  .main-header .container .text-header .h1 {
-    font-size: 150%;
-    padding: 3% 0; }
-  .main-header .container .text-header .meniu {
-    display: none; }
-  .main-header .container .text-header .burger {
-    display: inline-block; }
-  #main .main-banner .container .header {
-    padding-top: 100px; }
-    #main .main-banner .container .header h1 {
-      font-size: 140%;
-      padding-top: 2%; }
+  #main .main-banner .container .header h1 {
+    font-size: 140%;
+    padding-top: 2%; }
   #main .main-banner .container .hr-banner {
     width: 80px;
     margin-left: 39%;
@@ -1141,8 +1125,6 @@ table {
     font-size: 100%;
     margin-bottom: 10px;
     padding: 1%; }
-  #main .work .container .container .row .imghv .imgcls img {
-    width: 99%; }
   #main .work .container .container .row .imghv .hr-work {
     width: 80px;
     position: absolute;
@@ -1162,55 +1144,145 @@ table {
     font-size: 110%;
     top: 53px;
     text-align: center; }
-  #main .about-us {
-    display: none; }
-  #main .video iframe {
+  #main .about-us .container .header h1 {
+    font-size: 200%;
+    padding-top: 6%; }
+  #main .about-us .container p {
+    padding: 6% 0%;
+    font-size: 105%; }
+  #main .about-us .container .row .imghv .imgcls {
+    overflow: hidden;
+    position: relative;
+    height: 300px; }
+    #main .about-us .container .row .imghv .imgcls img {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: auto;
+      top: 50%;
+      padding: 2%;
+      left: 50%;
+      width: 60%; }
+  #main .about-us .container .row .imghv .imghover {
+    position: absolute;
+    top: 2%;
+    width: 56.5%;
+    height: 96%;
+    background-color: rgba(32, 25, 25, 0.5);
+    display: none;
+    text-align: center;
+    color: white;
+    padding-top: 50%;
+    left: 22%; }
+  .video iframe {
     height: 170px; }
-  #main .why-us {
+  .why-us {
     padding-top: 15px;
     padding-bottom: 7px; }
-    #main .why-us .container .header h1 {
+    .why-us .container .header h1 {
       font-size: 140%;
       padding-top: 4%;
       padding-bottom: 4%; }
-    #main .why-us .container p {
+    .why-us .container p {
       font-size: 80%;
       padding: 4% 0%; }
-    #main .why-us .container .news-header .article-container .article-item .article-image {
+    .why-us .container .news-header .article-container .article-item .article-image {
       height: 20%; }
-    #main .why-us .container .news-header .article-container .article-item .article-text1 {
+    .why-us .container .news-header .article-container .article-item .article-text1 {
       font-size: 20px;
       padding-bottom: 10px;
       padding-top: 15px; }
-    #main .why-us .container .news-header .article-container .article-item .article-text2 {
+    .why-us .container .news-header .article-container .article-item .article-text2 {
       font-size: 12px; }
-  #main .quote .cont {
+  .quote .cont {
     height: 150px; }
-  #main .quote .quote-text .btn {
+  .quote .quote-text .btn {
     padding: 6px 20px;
     border: 1px solid white;
     font-size: 110%;
     top: 53px;
     text-align: center; }
-  #main .touch {
+  .touch {
     padding: 15px 0; }
-    #main .touch .container .header h1 {
+    .touch .container .header h1 {
       font-size: 160%; }
-    #main .touch .container p {
+    .touch .container p {
       font-size: 90%;
       padding: 6% 0; }
-  #main .location {
+  .location {
     height: 230px; }
-    #main .location .text-loc .header h1 {
+    .location .text-loc .header h1 {
       font-size: 130%; }
-    #main .location .text-loc .navigation {
+    .location .text-loc .navigation {
       font-size: 100%; }
-    #main .location .text-loc .icn img {
+    .location .text-loc .icn img {
       width: 18px;
-      height: 23px; }
-  .end {
-    height: 70px; }
-    .end .container h1 {
-      font-size: 100%;
-      padding-top: 6%;
-      transform: none; } }
+      height: 23px; } }
+
+.end {
+  height: 70px; }
+  .end .container h1 {
+    font-size: 100%;
+    padding-top: 6%;
+    transform: none; }
+
+@media (max-width: 768px) {
+  .main-header .container .text-header .h1 {
+    font-size: 150%;
+    padding: 3% 0; }
+  .main-header .container .text-header .meniu {
+    display: none; }
+  .main-header .container .text-header .active-meniu {
+    display: block; }
+    .main-header .container .text-header .active-meniu.meniu {
+      height: 100vh; }
+      .main-header .container .text-header .active-meniu.meniu .meniu-cont {
+        position: relative;
+        top: 15%; }
+        .main-header .container .text-header .active-meniu.meniu .meniu-cont li {
+          text-align: center;
+          padding: 15px;
+          display: block; }
+  .main-header .container .text-header .burger-menu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; }
+  .main-header .container .text-header .burger {
+    position: absolute;
+    background: #6f6f6f;
+    width: 100%;
+    height: 10px;
+    top: 50%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1; }
+  .main-header .container .text-header .burger::before {
+    position: absolute;
+    background: #6f6f6f;
+    width: 30px;
+    height: 10px;
+    top: 20px;
+    content: "";
+    display: block; }
+  .main-header .container .text-header .burger::after {
+    position: absolute;
+    background: #6f6f6f;
+    width: 30px;
+    height: 10px;
+    bottom: 20px;
+    content: "";
+    display: block; }
+  .main-header .container .text-header .burger::after, .main-header .container .text-header .burger::before, .main-header .container .text-header .burger {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out; }
+  .main-header .container .text-header .burger-menu.menu-on .burger::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px; }
+  .main-header .container .text-header .burger-menu.menu-on .burger::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 0px; }
+  .main-header .container .text-header .burger-menu.menu-on .burger {
+    background: rgba(111, 111, 111, 0); } }
