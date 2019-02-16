@@ -503,7 +503,7 @@ table {
 
 .end {
   background-color: #222222;
-  height: 90px; }
+  height: 7%; }
   .end .container h1 {
     color: white;
     text-align: center;
@@ -1139,11 +1139,12 @@ table {
     width: 56.5%;
     height: 96%;
     background-color: rgba(32, 25, 25, 0.5);
-    display: none;
     text-align: center;
     color: white;
     padding-top: 50%;
     left: 22%; }
+    #main .about-us .container .row .imghv .imghover h1 {
+      padding-top: 0%; }
   .video iframe {
     height: 200px; }
   .why-us {
@@ -1190,7 +1191,7 @@ table {
       height: 23px; } }
 
 .end {
-  height: 70px; }
+  height: auto; }
   .end .container h1 {
     font-size: 100%;
     padding: 3%; }

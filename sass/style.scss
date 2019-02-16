@@ -625,7 +625,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
     }
 .end{
     background-color: #222222;
-    height: 90px;
+    height: 7%;
     .container{
        h1{
            color: white;
@@ -1673,11 +1673,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
                     width: 56.5%;
                     height: 96%;
                     background-color: rgba(32, 25, 25, 0.5);
-                    display: none;
+                    
                     text-align: center;
                     color: white;
                     padding-top: 50%;
                     left: 22%;
+                    h1{
+                         padding-top: 0%; 
+                    }
                 }
                }
            } 
@@ -1775,7 +1778,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
     } 
 }
     .end{
-        height: 70px;;
+        height: auto;
         .container{
             h1{
                 font-size: 100%;
