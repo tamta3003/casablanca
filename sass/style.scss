@@ -1799,8 +1799,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
           .container{
               .text-header{
                   .h1{
-                    font-size: 170%;
-                    padding: 4%;
+                    font-size: 27px;
+                    padding: 40px;
                   }
                   .meniu{
                       display: none;
@@ -1880,3 +1880,89 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce39147', e
           }
         }
         }
+        @media (min-width:578px) and (max-width:769px){
+            .main-header{
+              .container{
+                  .text-header{
+                      .h1{
+                        font-size: 27px;
+                        padding: 40px;
+                      }
+                      .meniu{
+                          display: none;
+                          
+                      }
+                      .active-meniu{
+                          display: block;
+                          &.meniu{
+                              height: 100vh;
+                              .meniu-cont{
+    
+                                  position: relative;
+                                  top: 15%;
+                                   li{
+                                         text-align: center;
+                                         padding: 15px;
+                                          display: block;
+                                      
+                                   }
+                              }
+    
+                          }
+                      }
+                      .burger-menu {
+                        position: relative;
+                        width: 30px;
+                        height: 21px;
+                        cursor: pointer;
+                        right: 3%;
+                      }
+                      .burger {
+                        position: absolute;
+                        background:rgb(243, 241, 241);
+                        width: 100%;
+                        height: 7px;
+                        top: 80%;
+                        right: 0px;
+                        margin-top: 0px;
+                        opacity: 1;
+                      }
+                      .burger::before {
+                        position: absolute;
+                        background:rgb(243, 241, 241);
+                        width: 30px;
+                        height: 7px;
+                        top: 16px;
+                        content: "";
+                        display: block;
+                      }
+                      .burger::after {
+                        position: absolute;
+                        background: rgb(243, 241, 241);
+                        width: 30px;
+                        height: 7px;
+                        bottom: 16px;
+                        content: "";
+                        display: block;
+                      }
+                      .burger::after, .burger::before, .burger {
+                        transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                      }
+                      .burger-menu.menu-on .burger::after{
+                         transform: rotate(-45deg);
+                         -webkit-transform: rotate(-45deg);
+                        bottom: 0px;
+                      }
+                      .burger-menu.menu-on .burger::before{
+                         transform: rotate(45deg);
+                         -webkit-transform: rotate(45deg);
+                        top: 0px;
+                      }
+                      .burger-menu.menu-on .burger{
+                       background: rgba(111,111,111,.0);
+                      }
+                  }
+              }
+            }
+            }
